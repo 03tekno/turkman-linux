@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+name='papirus-icon-theme'
+release='5'
+version='20240501'
+url='https://github.com/PapirusDevelopmentTeam/papirus-icon-theme'
+description='papirus icon theme'
+email='03teknoloji@gmail.com'
+maintainer='mobilturka'
+license=('GPLv3')
+source=("https://github.com/PapirusDevelopmentTeam/$name/archive/$version/$name-$version.tar.gz")
+depends=()
+makedepends=()
+sha256sums=('c12a64963639afffc5c5425c4d8fd09e9d5510bbc4c408a1fec9a1d617c5089b')
+group=(x11.themes)
+uses=()
+arch=('x86_64')
+
+package() {
+  cd $name-$version
+  make SHELL="/bin/bash -x" DESTDIR="$DESTDIR" install
+}
