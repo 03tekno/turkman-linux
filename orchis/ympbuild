@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+name='Orchis-theme'
+release='1'
+version='2024-05-30'
+url='https://github.com/vinceliuice/Orchis-theme'
+description='orchis theme'
+email='03teknoloi@gmail.com'
+maintainer='mobilturka'
+license=('GPLv3')
+source=("https://github.com/vinceliuice/$name/archive/refs/tags/$version.tar.gz")
+depends=()
+makedepends=()
+sha256sums=('24eedf42d79b36d2f405a167db47d2a8d50ccb34a27767ae80a8dff470d0a482')
+group=(x11.themes)
+uses=()
+arch=('x86_64')
+
+package() {
+  cd $name-$version
+  make SHELL="/bin/bash -x" DESTDIR="$DESTDIR" install
+}
+
