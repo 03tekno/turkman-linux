@@ -15,8 +15,12 @@ group=(x11.themes)
 uses=()
 arch=('x86_64')
 
+cd $name-$version
+
 package() {
-  cd $name-$version
-  make SHELL="/bin/bash -x" DESTDIR="$DESTDIR" install
+  	install -dm755 "$DESTDIR/usr/share/themes"
+	./install.sh --dest "$DESTDIR/usr/share/themes"
+	
+  	#make SHELL="/bin/bash -x" DESTDIR="$DESTDIR" install
 }
 
