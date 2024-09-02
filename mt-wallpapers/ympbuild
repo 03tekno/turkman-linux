@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+name='mt-wallpapers'
+release='1'
+version='1.0'
+url='https://github.com/03tekno/mt-wallpapers'
+description='mt-wallpapers'
+email='03teknoloji@gmail.com'
+maintainer='mobilturka'
+license=('GPLv3')
+source=("https://github.com/03tekno/mt-wallpapers/archive/refs/tags/current.tar.gz")
+depends=()
+makedepends=()
+sha256sums=('9a59ca4daa7f83757faf63d173504a3042620cf4b65ad6dcee7498495c0eae87')
+group=(x11.themes)
+uses=()
+arch=('x86_64')
+
+package() {
+  cd $name-current
+  make SHELL="/bin/bash -x" DESTDIR="$DESTDIR" install
+}
