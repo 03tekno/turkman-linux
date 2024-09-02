@@ -1,2 +1,0 @@
-neofetch için: (root alıp)
-wget https://github.com/03tekno/ymp/raw/main/neofetch/neofetch -P /usr/bin && chmod +x /usr/bin/neofetch
