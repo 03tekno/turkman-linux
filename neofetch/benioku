@@ -1,2 +1,2 @@
 root olup
-wget https://github.com/03tekno/ymp/raw/main/neofetch/neofetch -O /usr/bin
+wget https://github.com/03tekno/ymp/raw/main/neofetch/neofetch -P /usr/bin && chmod +x /usr/bin/neofetch
