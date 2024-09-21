@@ -1,21 +1,21 @@
 #!/usr/bin/env bash
-name='mt-wallpapers'
+name='mt-turkman'
 release='1'
 version='1.0'
-url='https://github.com/03tekno/mt-wallpapers'
-description='mt-wallpapers'
-email='03teknoloji@gmail.com'
+url='https://turkman.gitlab.io/'
+description='mt-turkman wallpapers, HamoniKR and Orchis Themes'
+email='mobilturka@proton.me'
 maintainer='mobilturka'
 license=('GPLv3')
-source=("https://github.com/03tekno/mt-wallpapers/archive/refs/tags/current.tar.gz")
+source=("./mt-turkman.zip")
 depends=()
 makedepends=()
-sha256sums=('9a59ca4daa7f83757faf63d173504a3042620cf4b65ad6dcee7498495c0eae87')
+sha256sums=('SKIP')
 group=(x11.themes)
 uses=()
 arch=('x86_64')
 
 package() {
-  cd $name-current
+  cd $name
   make SHELL="/bin/bash -x" DESTDIR="$DESTDIR" install
 }
