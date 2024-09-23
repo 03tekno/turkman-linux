@@ -27,8 +27,12 @@ Kurulu paketi kaldırmak için rm veya remove komutu kullanılır:
 ymp remove xarchiver
 
 # 2- Turkman Linux zaman dilimini ayarlama: (rootlu)
-ymp install tzdata --no-emerge && rm /etc/localtime && ln -s /usr/share/zoneinfo/Europe/Istanbul /etc/localtime
 
+```
+ymp install tzdata --no-emerge
+rm /etc/localtime && ln -s /usr/share/zoneinfo/Europe/Istanbul /etc/localtime
+
+```
 veya
 rm /etc/localtime && ln -s /usr/share/zoneinfo/Asia/Istanbul /etc/localtime
 
