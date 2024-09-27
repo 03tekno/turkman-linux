@@ -123,7 +123,8 @@ Type=Application
 Terminal=false
 Categories=AudioVideo;Audio;Video;
 
-# 5- Turkman Linux bluetooth etkinleştirme ve aygıtı bağlama: (Rootlu)
+# 5- Turkman Linux bluetooth etkinleştirme ve aygıtı bağlama: 
+Bluetooth aygıtlarımızı aşağıdaki komutla bağlantı yapabiliriz (Rootlu)
 
 ```
 rc-update add bluetooth 
