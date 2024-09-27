@@ -26,7 +26,8 @@ ymp it xarchiver --no-emerge (Depodan derlenmiş .ymp paketi kurmak için)
 Kurulu paketi kaldırmak için rm veya remove komutu kullanılır:
 ymp remove xarchiver
 
-# 2- Turkman Linux zaman dilimini ayarlama: (rootlu)
+# 2- Turkman Linux zaman dilimini ayarlama: 
+Terminal den aşağıdaki komutu girelim örnek olarak ben İstanbul'u aldım (rootlu)
 
 ```
 ymp install tzdata --no-emerge
