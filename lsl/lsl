@@ -1,29 +1,16 @@
 
 Lsl ve Pardus depo ekleme:
-
 ymp it lsl --no-emerge
 
-
 Debian terminale tıkla ve y (yes) komutu ile subsystem in kurulumunu bekle! Kurulum tamamlandıktan sonra Debian terminali kapatalım.
-
 Debian terminal (rootlu) olana tıkla ve aşağıdaki komutları uygulayalım.
 
-
 rm /etc/apt/apt.conf.d/01norecommend
-
 apt install ca-certificates wget
-
 wget https://depo.pardus.org.tr/pardus/pool/main/p/pardus-archive-keyring/pardus-archive-keyring_2021.1_all.deb
-
 apt install ./pardus-archive-keyring*.deb
-
 echo 'deb http://depo.pardus.org.tr/pardus yirmiuc main contrib' | tee /etc/apt/sources.list.d/pardus.list 
-
 apt update
 
-
-
-
 Pardus depo eklendi :) Not: İlk kurulum sonrası oturumu bir defalığına açık kapatalım menüde uygulamalar görünecektir.
-
 apt install pardus-software pardus-pen vs...
